@@ -1,2 +1,1 @@
-# pong-ts-p5
-Created with CodeSandbox
+# P5.js Pong
