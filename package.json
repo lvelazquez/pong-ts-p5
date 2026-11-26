@@ -1,21 +1,42 @@
 {
-  "name": "vanilla-typescript",
+  "name": "pong-ts-p5",
   "version": "1.0.0",
-  "description": "JavaScript and TypeScript example starter project",
-  "main": "index.html",
-  "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
-  },
-  "dependencies": {
-    "@types/p5": "0.9.1",
-    "p5": "1.1.9"
-  },
-  "devDependencies": {
-    "parcel-bundler": "^1.6.1"
+  "description": "Pong in TypeScript and p5.js with an AI opponent, 2-player mode, and keyboard and touch controls.",
+  "private": true,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lvelazquez/pong-ts-p5.git"
   },
   "keywords": [
+    "pong",
+    "p5js",
     "typescript",
-    "javascript"
-  ]
+    "game",
+    "vite"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "p5": "^1.11.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.6",
+    "@types/p5": "^1.7.7",
+    "eslint": "^10.15.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.74.0",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
 }
